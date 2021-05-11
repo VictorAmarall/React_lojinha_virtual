@@ -18,7 +18,7 @@ Lojinha virtual para vender os seus itens, o mesmo possui uma interface desenvol
 
 # Lojinha Virtual:
 
-<img src="https://app-lojinha-virtual.s3-sa-east-1.amazonaws.com/lojinha.jpg" width="1000" height="429" />
-<img src="https://app-lojinha-virtual.s3-sa-east-1.amazonaws.com/carrinho.jpg" width="1000" height="426" />
+<img src="https://app-lojinha-virtual.s3-sa-east-1.amazonaws.com/lojinha.jpg" width="800" height="429" />
+<img src="https://app-lojinha-virtual.s3-sa-east-1.amazonaws.com/carrinho.jpg" width="800" height="426" />
 
 
