@@ -14,8 +14,8 @@ Simula o consumo de um JSON, considerado um diferencial (API REST)
 
 # Lojinha Virtual:
 
-<img src="https://app-lojinha-virtual.s3-sa-east-1.amazonaws.com/lojinha.jpg" width="200" height="200" />
-<img src="https://app-lojinha-virtual.s3-sa-east-1.amazonaws.com/carrinho.jpg" width="200" height="200" />
+<img src="https://app-lojinha-virtual.s3-sa-east-1.amazonaws.com/lojinha.jpg" width="1000" height="429" />
+<img src="https://app-lojinha-virtual.s3-sa-east-1.amazonaws.com/carrinho.jpg" width="1000" height="426" />
 
 ## Descrição:
 
