@@ -1,15 +1,14 @@
 
-import { ADD_TO_CART, UPDATE_AMOUNT_CART, ListsAction, ListState, REMOVE_FROM_CART, } from "types/types";
+import { ADD_TO_CART, UPDATE_AMOUNT_INCREMENT, ListsAction, ListState, REMOVE_FROM_CART, UPDATE_AMOUNT_DECREMENT } from "types/types";
 
 
 const initialState: ListState = {
   products: [],
-  id:0,
-  amount:0
+  id: 0,
+  amount: 0
 }
 
 const List = (state = initialState, action: ListsAction): ListState => {
-  //console.log(action)  
   switch (action.type) {
     case ADD_TO_CART:
       const product = action.payload;
@@ -32,12 +31,29 @@ const List = (state = initialState, action: ListsAction): ListState => {
         ...state,
         products: state.products.filter((x) => x.id !== action.payload.id),
       };
-    case UPDATE_AMOUNT_CART:
+    case UPDATE_AMOUNT_INCREMENT: {
+      const productIndex = state.products.findIndex(p => p.id === action.payload.id);
+      return {
+          ...state,
+          id: productIndex,
+          amount: state.products[productIndex].amount = Number(action.payload.amount+1)
+        };
+    } 
+    case UPDATE_AMOUNT_DECREMENT:
+      const productIndex = state.products.findIndex(p => p.id === action.payload.id);
+      if(action.payload.amount <= 0){
+        return{  
+          ...state,
+          id:productIndex,
+          amount:state.products[productIndex].amount = Number(action.payload.amount+1)
+
+      }}else{
         return {
           ...state,
-          id:action.payload.id, 
-          amount:action.payload.amount
+          id: productIndex,
+          amount: state.products[productIndex].amount = Number(action.payload.amount-1)
         };
+      }
     default:
       return state;
   }

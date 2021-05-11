@@ -1,4 +1,4 @@
-import { ADD_TO_CART, GET_LISTS, ListsAction, product, REMOVE_FROM_CART, UPDATE_AMOUNT_CART } from "types/types"
+import { ADD_TO_CART, GET_LISTS, ListsAction, product, REMOVE_FROM_CART, UPDATE_AMOUNT_INCREMENT , UPDATE_AMOUNT_DECREMENT} from "types/types"
 
 export const setCart = (product: product): ListsAction => {
     return {
@@ -12,9 +12,18 @@ export const setRemoveCart = (product: product): ListsAction => {
       payload: product
     }
   }
-  export const setUpdateAmount = (id: number, amount: number): ListsAction => {
+  export const setUpdadeAmounIncrement = (id: number, amount: number): ListsAction => {
     return {
-      type: UPDATE_AMOUNT_CART,
+      type: UPDATE_AMOUNT_INCREMENT,
+      payload: {
+        id,
+        amount
+      }
+    }
+  }
+  export const setUpdadeAmountDecrement = (id: number, amount: number): ListsAction => {
+    return {
+      type: UPDATE_AMOUNT_DECREMENT,
       payload: {
         id,
         amount
