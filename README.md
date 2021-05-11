@@ -12,11 +12,13 @@ Executa o aplicativo no modo de desenvolvimento.
 ( JSON-SERVER ) - roda na porta 5000 configurada no arquivo json-server.json
 Simula o consumo de um JSON, considerado um diferencial (API REST)
 
+## Descrição:
+
+Lojinha virtual para vender os seus itens, o mesmo possui uma interface desenvolvida com as tecnologias React Hooks com Typescript onde o usuário escolhe seus produtos e adiciona no carrinho, a listagem desses itens é por meio do consumo de uma API REST(Simulada). O modal do carrinho contém todos os itens selecionados, quantidade, preço e total. 
+
 # Lojinha Virtual:
 
 <img src="https://app-lojinha-virtual.s3-sa-east-1.amazonaws.com/lojinha.jpg" width="1000" height="429" />
 <img src="https://app-lojinha-virtual.s3-sa-east-1.amazonaws.com/carrinho.jpg" width="1000" height="426" />
 
-## Descrição:
 
-Lojinha virtual para vender os seus itens, o mesmo possui uma interface desenvolvida com as tecnologias React Hooks com Typescript onde o usuário escolhe seus produtos e adiciona no carrinho, a listagem desses itens é por meio do consumo de uma API REST(Simulada). O modal do carrinho contém todos os itens selecionados, quantidade, preço e total. 
