@@ -1,41 +1,44 @@
 import styled from'styled-components'
-import { Link} from 'react-router-dom'
-export const Container = styled.header`
-    display: flex;
-    justify-content: space-between;
+import {Link} from 'react-router-dom'
+
+export const ListHeader = styled.div`
+h3{
+    margin-top: 3vh;
+    display: inline;
+}
+
+h6{
+    margin-top: 2vh;
+}
+strong{
+    margin-left: 5vh;
+}
+span{
     align-items: center;
-    margin: 25px 0;
-    font-color:#fff;
-    img {
-        max-width:250px;
-        max-height:200px;
-        width: auto;
-        height: auto;
-    }
+    color:#1BBB16;
+    margin-left:5vh;
+    font-size: 2vh;
+}
 `;
 
 export const Cart = styled(Link)`
-    display: flex;
-    align-items: center;
-    text-decoration:none;
-    color:#fff;
-    transition:opacity 0.2s;
-
+display:flex;
+align-items: center;
+text-decoration:none;
+color:black;
+transition:opacity 0.2s;
     &:hover{
         opacity:0.7
     }
     div{
         text-align: right;
-        margin-right: 10px;
         strong{
-            display:block;
-            font-size: 25px;    
-            color:#fff
+            font-size: 20px; 
+            color:black;   
         }
-
     }
     span{
-        font-size: 25px;
-        color:#999;
+        color:#B41C8B;
+        font-size: 15px;
     }
 `;
