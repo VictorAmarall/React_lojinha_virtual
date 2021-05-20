@@ -7,7 +7,7 @@ import { setCart } from 'store/actions/listActions';
 import { RootState } from 'store';
 import { useEffect, useState } from 'react';
 import api from 'services/api';
-import Categories from 'components/Categories';
+import { Container } from 'react-bootstrap';
 
 
 const Category = () => {
@@ -35,8 +35,7 @@ const Category = () => {
     return (
         
         <>
-
-            <Categories />
+        <Container>
             <ProductList>
                     {catData.product.map(prod => (                        
                         <li key={prod.price}>
@@ -52,6 +51,7 @@ const Category = () => {
                         </li>
                     ))}
             </ProductList>
+        </Container>
         </>
 
 

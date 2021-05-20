@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { Container, ProductTable, Total } from './styles';
+import { Cont, ProductTable, Total } from './styles';
 import { MdRemoveCircleOutline, MdAddCircleOutline, MdDelete } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'store';
 import { formatPrice } from 'utils/format';
 import { product } from 'types/types';
 import { getLists, setRemoveCart, setUpdadeAmounIncrement, setUpdadeAmountDecrement } from 'store/actions';
+import { Container } from 'react-bootstrap';
 
 const Cart = () => {
     const dispatch = useDispatch();
@@ -34,6 +35,7 @@ const Cart = () => {
 
     return (
         <Container>
+        <Cont>
             <ProductTable>
                 <thead>
                     <tr>
@@ -89,6 +91,7 @@ const Cart = () => {
                     <strong>{formatPrice(total)}</strong>
                 </Total>
             </footer>
+        </Cont>
         </Container>
     )
 }

@@ -4,6 +4,7 @@ import Home from "pages/Home";
 import Cart from "pages/Cart";
 import Footer from "components/Footer";
 import Category from "pages/Category";
+import NavBar from 'components/NavBar';
 
 
 const Routes = () => {
@@ -12,6 +13,7 @@ const Routes = () => {
         <>
             <Router>
                 <Header />
+                <NavBar />
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/cart" component={Cart} />

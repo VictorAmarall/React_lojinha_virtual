@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { formatPrice } from 'utils/format';
 import { useDispatch } from 'react-redux';
 import { getLists, setCart } from 'store/actions/listActions';
-import Categories from 'components/Categories';
+import { Container } from 'react-bootstrap';
 
 
 type productData = {
@@ -38,7 +38,7 @@ const Home = () => {
     };
     return (
         <>
-                    <Categories />
+                <Container>
                     <ProductList>
                     {productData.products.map(prod => (                        
                         <li key={prod.price}>
@@ -54,6 +54,7 @@ const Home = () => {
                         </li>
                     ))}
                     </ProductList>
+                </Container>
               
           </>  
         
